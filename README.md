@@ -1,6 +1,6 @@
-# python-docker-boilerplate
+# Python Alma Unset Acq Tags
 
-Boilerplate code for starting a Python project with Docker
+Alma Unset Acq Tags in Python.
 
 ## Set up
 
@@ -31,6 +31,14 @@ docker-compose up -d
 
 ## Run the program
 
+This command will run the create-sets.py script, which combines two sets into an Itemized set:
+
 ```
-docker-compose run --rm app python [etc.]
+docker-compose run --rm app python create-sets.py
+```
+
+This command will run the change-tags.py script, which will change the Management Tags of the newly created set to "Don't Publish":
+
+```
+docker-compose run --rm app python change-tags.py
 ```

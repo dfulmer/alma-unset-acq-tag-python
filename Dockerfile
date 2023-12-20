@@ -18,3 +18,5 @@ WORKDIR /app
 COPY --chown=${UID}:${GID} . /app
 
 CMD ["tail", "-f", "/dev/null"]
+
+LABEL maintainer="dfulmer@umich.edu"
